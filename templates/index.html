@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keyword Extraction App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #ffe6f0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h2 {
+            color: #d63384;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        .container {
+            background-color: #fff0f5;
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 60px;
+            box-shadow: 0 8px 20px rgba(214, 51, 132, 0.2);
+        }
+
+        label {
+            font-weight: 500;
+            color: #8c1c53;
+        }
+
+        .btn-primary {
+            background-color: #d63384;
+            border-color: #d63384;
+        }
+
+        .btn-primary:hover {
+            background-color: #c21869;
+            border-color: #c21869;
+        }
+
+        input[type="file"],
+        input[type="text"] {
+            border: 1px solid #f7cde0;
+            background-color: #fff;
+        }
+
+        hr {
+            border-top: 1px solid #f5c1d7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container col-md-6 mx-auto">
+        <h2 class="text-center">Keyword Extraction App</h2>
+
+        <!-- Upload Document Form -->
+        <form method="POST" action="/extract_keywords" enctype="multipart/form-data">
+            <div class="form-group mb-3">
+                <label for="document">📄 Upload Document:</label>
+                <input type="file" name="file" class="form-control" id="document">
+            </div>
+            <button type="submit" class="btn btn-primary mb-3">Extract Keywords</button>
+        </form>
+
+        <hr>
+
+        <!-- Search Keywords Form -->
+        <form method="POST" action="/search_keywords">
+            <div class="form-group mb-3">
+                <label for="search">🔍 Search Keywords:</label>
+                <input type="text" name="search" class="form-control" id="search">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
