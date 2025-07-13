@@ -11,7 +11,7 @@ A web-based NLP application to extract the most meaningful keywords from user-pr
 
 ## 📸 Demo
 
-<img src="https://github.com/rounak3110/Keywords-extraction-App-using-Machine-Learning/assets/demo-image-placeholder" alt="App Demo" width="600"/>
+![App Screenshot]<img width="1192" height="640" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/dc01ea4b-3c03-480b-b238-80e61fa953dd" />
 
 ---
 
